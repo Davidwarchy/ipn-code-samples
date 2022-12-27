@@ -62,7 +62,7 @@ if ($verified) {
 
         // Process IPN
         // A list of variables are available here:
-        // https://developer.paypal.com/webapps/developer/docs/classic/ipn/integration-guide/IPNandPDTVariables/
+        // https://developer.paypal.com/api/nvp-soap/ipn/IPNandPDTVariables/
 
         // This is an example for sending an automated email to the customer when they purchases an item for a specific amount:
         if ($_POST["item_name"] == "Example Item" && $_POST["mc_gross"] == 49.99 && $_POST["mc_currency"] == "USD" && $_POST["payment_status"] == "Completed") {
